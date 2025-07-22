@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Noor Wicaksono - Web Profil Kreatif</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">Aditya Noor Wicaksono</div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About Me</a></li>
+                    <li><a href="#projects" class="nav-link" data-section="projects">Proyek</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="page-section hero-section">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1>Halo, Saya Aditya Noor Wicaksono</h1>
+            <p class="subtitle">Seorang Web Developer & Desainer Kreatif dari Semarang, Jawa Tengah.</p>
+            <a href="#projects" class="btn-primary btn-lihat-proyek">Lihat Proyek Saya</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="page-section hidden">
+        <div class="container about-container">
+            <div class="about-img">
+                <img src="img/profile-pic.jpg" alt="Profile" class="profile-pic">
+            </div>
+            <div class="about-content">
+                <h2>Tentang Saya</h2>
+                <div class="underline"></div>
+                <h3>Perkenalkan, Saya Aditya Noor Wicaksono</h3>
+                <p>Saya adalah seorang profesional muda dengan pengalaman di bidang pengembangan web dan desain grafis.
+                    Saya bersemangat dalam menciptakan solusi digital yang inovatif dan menarik secara visual. Saya
+                    selalu antusias untuk mempelajari teknologi baru dan menghadapi tantangan.</p>
+                <ul class="about-list">
+                    <li><b>Nama:</b> Aditya Noor Wicaksono</li>
+                    <li><b>Asal:</b> Yogyakarta</li>
+                    <li><b>Email:</b> widiyatminiarli@gmail.com</li>
+                    <li><b>Profesi:</b> Web Developer, Desainer</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container skills-container">
+            <h2>Keahlian Saya</h2>
+            <div class="underline"></div>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-html5"></i>
+                    <h4>HTML5 & CSS3</h4>
+                    <p>Membangun struktur dan gaya web modern dengan standar terbaru.</p>
+                </div>
+                <div class="skill-card"><i class="fab fa-js"></i>
+                    <h4>JavaScript</h4>
+                    <p>Mengimplementasikan interaktivitas dan fungsionalitas dinamis.</p>
+                </div>
+                <div class="skill-card"><i class="fas fa-code"></i>
+                    <h4>Backend Development</h4>
+                    <p>Pengalaman dengan Node.js dan Express.js untuk API dan server.</p>
+                </div>
+                <div class="skill-card"><i class="fas fa-palette"></i>
+                    <h4>UI/UX Design</h4>
+                    <p>Merancang antarmuka yang menarik dan mudah digunakan.</p>
+                </div>
+                <div class="skill-card"><i class="fas fa-mobile-alt"></i>
+                    <h4>Desain Responsif</h4>
+                    <p>Optimasi tampilan untuk berbagai perangkat.</p>
+                </div>
+                <div class="skill-card"><i class="fas fa-database"></i>
+                    <h4>Database Management</h4>
+                    <p>Pengelolaan data dengan efisien dan aman.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="page-section hidden">
+        <div class="container">
+            <h2>Proyek Saya</h2>
+            <div class="underline"></div>
+            <button class="btn-primary" id="addProjectBtn" type="button">Tambah Proyek Baru</button>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="img/project-thumbnail-1.jpg" alt="E-commerce Fashion">
+                    <h4>Website E-commerce Fashion</h4>
+                    <p>Membangun platform e-commerce responsif untuk butik fashion lokal dengan integrasi pembayaran
+                        online.</p>
+                </div>
+                <div class="project-card">
+                    <img src="img/project-thumbnail-2.jpg" alt="Sistem Informasi Desa">
+                    <h4>Sistem Informasi Desa</h4>
+                    <p>Pengembangan sistem informasi berbasis web untuk memudahkan administrasi dan pelayanan desa.</p>
+                </div>
+            </div>
+            <form id="projectForm" class="hidden project-form">
+                <h3>Tambah/Edit Proyek</h3>
+                <label>Judul Proyek:</label>
+                <input type="text" id="projectTitle" required>
+                <label>Deskripsi:</label>
+                <textarea id="projectDesc" rows="3" required></textarea>
+                <label>Pilih Gambar (dari komputer Anda):</label>
+                <input type="file" id="projectImg">
+                <label>Link Proyek (Opsional):</label>
+                <input type="url" id="projectLink" placeholder="contoh: https://namawebsite.com">
+                <div class="form-btns">
+                    <button type="submit" class="btn-primary">Simpan Proyek</button>
+                    <button type="button" class="btn-secondary" id="cancelProjectBtn">Batal</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page-section hidden">
+        <div class="container">
+            <h2>Hubungi Saya</h2>
+            <div class="underline"></div>
+            <p>Jangan ragu untuk menghubungi saya melalui platform berikut:</p>
+            <div class="contact-grid">
+                <a href="https://wa.me/+6282220526214/" target="_blank" class="contact-card whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <h4>WhatsApp</h4>
+                    <p>Chat langsung</p>
+                </a>
+                <a href="https://instagram.com/adityanrw" target="_blank" class="contact-card instagram">
+                    <i class="fab fa-instagram"></i>
+                    <h4>Instagram</h4>
+                    <p>Lihat karya & cerita saya</p>
+                </a>
+            </div>
+            <p class="or">Atau kirim pesan langsung:</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Nama" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="3" placeholder="Pesan" required></textarea>
+                <button type="submit" class="btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Aditya Noor Wicaksono. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
